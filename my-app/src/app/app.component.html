@@ -1,0 +1,21 @@
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Languages</h1>
+            <input type='text' [(ngModel)]="language">
+            <p>Your lan ={{language}}</p>
+            <button class="btn btn-success" (click)="addLanguage()">Add language</button>
+            <h2>Language you know</h2>
+            <ul class="list-group">
+                <li class="list-group-item" *ngFor="let temp of listOfLanguages;">
+                    {{temp}}
+                </li>
+                
+            </ul>
+
+
+        </div>
+    </div>
+</div>
